@@ -127,9 +127,9 @@ with tab2:
     @observe(name='user info extraction')
     def extractUserInfo(user_input: str) -> UserInfo:
         return instructor_openai_client.chat.completions.create(
-            # model="gpt-4o-mini",
+            model="gpt-4o-mini",
             # model="gpt-4o",
-            model="gpt-4.1-nano",
+            # model="gpt-4.1-nano",
             response_model=UserInfo,
             messages=[
                 {
